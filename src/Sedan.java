@@ -7,6 +7,7 @@ public class Sedan extends Car {
     }
 
     public double getSalePrice() {
-        return super.getSalePrice() * (length < 20 ? 0.9 : 0.85);
+        // for this method implement this: If length>20 feet, 5%discount, Otherwise, 10%discount
+        return super.getSalePrice() * (length < 20 ? 0.95 : 0.90);
     }
 }
